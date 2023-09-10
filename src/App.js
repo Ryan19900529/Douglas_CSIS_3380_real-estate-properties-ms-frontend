@@ -21,10 +21,7 @@ import "./index.css";
 export default function App() {
   return (
     <>
-      <BrowserRouter
-        basename="/real-estate-properties-ms-frontend
-"
-      >
+      <BrowserRouter>
         <Routes>
           <Route path="/" exact element={<Login />} />
           <Route path="/register" element={<Register />} />
