@@ -21,12 +21,14 @@ import "./index.css";
 export default function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter
+        basename="/real-estate-properties-ms-frontend
+"
+      >
         <Routes>
-
           <Route path="/" exact element={<Login />} />
           <Route path="/register" element={<Register />} />
-          
+
           <Route path="/property" element={<Properties />} />
           <Route path="/realtor" element={<RealtorDatabase />} />
           <Route path="/seller" element={<SellerDatabase />} />
@@ -37,10 +39,9 @@ export default function App() {
 
           <Route path="/newRealtor" element={<CreateRealtor />} />
           <Route path="/updateRealtor/:id" element={<UpdateRealtor />} />
-          
+
           <Route path="/newSeller" element={<CreateSeller />} />
           <Route path="/updateSeller/:id" element={<UpdateSeller />} />
-          
         </Routes>
       </BrowserRouter>
     </>
